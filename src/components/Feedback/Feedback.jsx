@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 export function Feedback({ stats, onLeaveFeedback }) {
   return (
     <div>
@@ -14,3 +16,8 @@ export function Feedback({ stats, onLeaveFeedback }) {
     </div>
   );
 }
+
+Feedback.propTypes = {
+  stats: PropTypes.array.isRequired,
+  onLeaveFeedback: PropTypes.func.isRequired,
+};
